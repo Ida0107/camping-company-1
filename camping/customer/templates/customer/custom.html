@@ -1,0 +1,34 @@
+{% include "snippets/base.html" %}
+{% load staticfiles %}
+    {% block css %}<link rel="stylesheet" href="{% static 'css/l/destination.css' %}">{% endblock %}
+
+    {% block content_block %}
+        <h1 style="text-align: center;">Custom Itinerary</h1>
+        {% if list %}
+            {% for x in list %}
+            <div class="row text-center">
+            <h2>Day: {{forloop.counter}}</h2>
+                {% for y in data %}
+                    {% for z in y.destination.all %}
+                            {% if z.pk in x %}
+                                    <div class="col-sm-6 col-md-4">
+                                      <div class="thumbnail">
+                                    <img class="normal" src="{{z.images.url}}" alt="image not found">
+                                        <div class="caption">
+                                          <h4>{{z.place}}</h4>
+                                           <!--<p>Description: {{z.description}}</p>-->
+                                            <!--<p>Activities: {{z.activities}}</p>-->
+                                        </div>
+                                      </div>
+                                    </div>
+                            {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            <hr>
+            </div>
+            {% endfor %}
+        <a href="{% url 'customer:book' pk=user.pk %}" class="btn btn-primary btn pull-right">Book Now</a>
+        {% else %}
+            <h1>No Active Itinerary</h1>
+        {% endif %}
+     {% endblock %}

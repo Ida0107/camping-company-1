@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>Camping Co.</title>
+    {% include "snippets/css.html" %}
+
+    {% block css %}
+
+    {% endblock %}
+
+</head>
+<body>
+    {% include "snippets/navbar.html" %}
+
+    {% block content_block %}
+
+    {% endblock %}
+
+</body>
+    {% include "snippets/js.html" %}
+</html>

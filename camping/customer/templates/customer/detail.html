@@ -1,0 +1,13 @@
+{% include "snippets/base.html" %}
+{% load staticfiles %}
+    {% block css %}<link rel="stylesheet" href="{% static 'css/ls/destination.css' %}">{% endblock %}
+
+    {% block content_block %}
+        <img src="{{item.images.url}}">
+        <h2>{{item.place}}</h2>
+        <p>Description:{{item.description}}</p>
+        <p>Activities: {{item.activities}}</p>
+        <p>Distance from Guwahti: {{item.distance}} Km</p>
+        <p>Stay-Hours: {{item.hours}}</p>
+
+    {% endblock %}

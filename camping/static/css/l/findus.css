@@ -1,0 +1,49 @@
+a {
+    color: #243551;
+}
+
+.nav>li>a:hover {
+    background-color: transparent;
+    color: #243551;
+}
+
+.navbar-header>a:hover {
+    background-color: transparent;
+    color: #243551;
+}
+
+.navbar-fixed-top{
+    margin-bottom: 25px;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, p{
+  text-align: center;
+
+}
+
+.stl {
+  width: 30%;
+  margin: 20px auto;
+
+}
+
+textarea {
+  max-width: 100%;
+}
+
+.coll {
+  max-width: 400px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.fix {
+  margin-top: 80px;
+}

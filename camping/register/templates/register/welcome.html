@@ -1,0 +1,10 @@
+{% extends "snippets/base.html" %} {% load staticfiles %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/rest.css' %}"> {% endblock %}
+
+
+{% block content_block %}
+    <div class="fix">
+        <h3>{{user.username}} you are signed Up great!! press Submit to redirect to User page</h3>
+        <a href="{% url 'customer:user_page' %}" class="btn btn-primary">Submit</a>
+    </div>
+{% endblock %}

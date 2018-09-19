@@ -1,0 +1,10 @@
+{% include "snippets/base.html" %}
+{% load staticfiles %}
+    {% block css %}<link rel="stylesheet" href="{% static 'css/thar.css' %}">{% endblock %}
+
+    {% block content_block %}
+        <div class="fix">
+            <p>The Camping Company</p>
+            <h1>BOOK YOUR DREAM HOLIDAY</h1>
+        </div>
+    {% endblock %}

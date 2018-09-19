@@ -1,0 +1,46 @@
+{% include "snippets/base.html" %}
+{% load staticfiles %}
+    {% block css %}<link rel="stylesheet" href="{% static 'css/thar.css' %}">{% endblock %}
+
+    {% block content_block %}
+    <div class="">
+      <h2>Thar 4x4</h2>
+      <img src="https://static.wixstatic.com/media/ab88d9_9fbb020f66914f13bf2990d42c01863b~mv2.jpg/v1/fill/w_649,h_408,q_85,usm_0.66_1.00_0.01/ab88d9_9fbb020f66914f13bf2990d42c01863b~mv2.jpg" alt="">
+      <p>From</p>
+      <h3>Rs2999</h3>
+      <p>Per Night</p>
+      <form method="POST" action="#">
+        {% csrf_token %}
+        <input type="date" placeholder="Check-In" name="Check">
+        <input type="date" placeholder="Check-Out" name="Check">
+        <input type="number" placeholder="Adults" name="Adult">
+        <input type="submit" value="search" class="myButton btn btn-primary">
+      </form>
+    </div>
+    <div class="">
+      <h3>Properties</h3>
+      <p>Accommodates</p>
+      <p>Beds: 1 Queen(s)</p>
+    </div>
+    <hr>
+
+    <div class="">
+      <h3>More Info</h3>
+      <p>Located in Guwahati & Shillong we are the gateway to some of the best camping sites, trekking trails and waterfalls this side of the world has to offer. Start in Guwahati and head wherever your imagination takes you! We will also help you in planning of your trip. P.S - If it's your first time camping, don't worry! You can park our camper at one of our partner property which will let you use all its amenities (restaurant, toilet & charging point)</p>
+
+    </div>
+    <hr>
+
+    <div class="">
+      <h3>Ammenities</h3>
+    </div>
+
+    <hr>
+
+    <div class="">
+      <h3>Check In and Out</h3>
+      <p>Check-In: 12:00 PM</p>
+      <p>Check-Out: 02:00 PM</p>
+    </div>
+
+    {% endblock %}

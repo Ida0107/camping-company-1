@@ -1,0 +1,30 @@
+.navbar-inverse .navbar-brand{
+    color: #cecece;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #cecece;
+}
+
+body {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://static.wixstatic.com/media/38567b0b5eb55f8eba96f60fa6356630.png/v1/crop/x_0,y_0,w_423,h_423/38567b0b5eb55f8eba96f60fa6356630.png")
+}
+
+.fix {
+    width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 0 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

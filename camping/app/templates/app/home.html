@@ -1,0 +1,58 @@
+{% include "snippets/base.html" %} {% load staticfiles %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}"> {% endblock %} {% block content_block %}
+
+<div class="orange">
+  <video autoplay muted loop id="myVideo">
+        <source src="{% static 'video/1.mp4' %}" type="video/mp4">
+
+  </video>
+</div>
+
+<div id="apple">
+  <form class="form-inline" action="{% url 'vehicle:vehicles' %}" method="POST" autocomplete="off">
+      {% csrf_token %}
+        <div class="form-group">
+      <input class="email" name="place" list="places" placeholder="Places">
+        <datalist id="places">
+          <option value="Meghalaya">
+          <option value="Assam">
+          <option value="Arunachal Pradesh">
+          <option value="Nagaland">
+          <option value="Sikkim">
+        </datalist>
+    </div>
+
+    <div class="form-group">
+      <input type="text" name="tripDay" class="form-control date" id="datetimepicker" placeholder="DD/MM/YYYY">
+    </div>
+
+    <div class="form-group">
+      <input list="Duration" name="Duration" id="list" placeholder="Days">
+        <datalist id="Duration">
+          <option value="1">
+          <option value="2">
+          <option value="3">
+          <option value="3">
+          <option value="4">
+          <option value="5">
+          <option value="10">
+          <option value="30">
+        </datalist>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div class="fix">
+  <h3>THE CAMPING COMPANY</h3>
+  <h1>BOOK YOUR DREAM HOLIDAY</h1>
+</div>
+
+<script>
+    $("#datetimepicker").datetimepicker({
+     timepicker:false,
+     format:'Y-m-d'
+     });
+</script>
+
+{% endblock %}

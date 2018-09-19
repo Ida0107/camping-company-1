@@ -1,0 +1,21 @@
+{% include "snippets/base.html" %}
+{% load staticfiles %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/about.css' %}">{% endblock %}
+
+    {% block content_block %}
+        <div class="fix">
+            <h1>ABOUT US</h1>
+            <hr>
+            <h4>WE RENT SUV'S AND PICKUPS, EQUIPPED WITH ROOF-TOP TENTS AND EVERYTHING YOU NEED FOR AN OVERLAND ADVENTURE.</h4>
+            <p>Located in Guwahati & Shillong we are the gateway to some of the best waterfalls, trekking trails and camping sites this side of the world has to offer. Start here and head wherever your imagination takes you. Our rentals are renowned for being some of the most capable adventure vehicles built. When coupled with roof-top tents, camping equipment, and an adventurous will, these vehicles will take you anywhere you wish to go. We strive to get you there. Let's plan your next adventure!​</p>
+            <h4>WHAT'S INCLUDED IN YOUR RENTAL?</h4>
+            <ul>
+                <li>CAMP CHAIRS</li>
+                <li>BBQ GRILL</li>
+                <li>COOKING AND PLATING WARES</li>
+                <li>3+ PERSON ROOF TOP TENT</li>
+                <li>ADDITIONAL GROUND TENT AVAILABLE FOR 5+ PERSON</li>
+                <li>ADDITIONAL EQUIPMENT AVAILABLE UPON REQUEST</li>
+            </ul>
+        </div>
+    {% endblock %}

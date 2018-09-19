@@ -1,0 +1,85 @@
+.nav>li>a:hover {
+    background-color: transparent;
+    color: #243551;
+}
+
+.navbar-header>a:hover {
+    background-color: transparent;
+    color: #243551;
+}
+
+.navbar-header>a {
+letter-spacing: 2px;
+}
+
+.navbar-fixed-top{
+    margin-bottom: 25px;
+}
+
+a {
+    color: #243551;
+}
+
+body {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+hr {
+  border-color: rgba(176, 55, 55, .3);
+}
+
+.fix {
+  padding: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.super {
+  padding: 0px 20px 20px 20px;
+  max-width: 500px;
+}
+
+.super span {
+  font-weight: lighter;
+}
+
+.super h3 {
+  font-weight: bolder;
+}
+
+.price {
+  max-width: 500px;
+  margin: 30px;
+}
+
+.gavar p {
+  margin-bottom: 0px;
+  padding: 0 20px;
+}
+
+.gavar span {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.gavar {
+  padding-top: 80px;
+}
+
+.myButton {
+  background-color: #b03737;
+  color: white;
+}
+
+.clear {
+    margin-bottom: 20px;
+}
+
+img {
+    object-fit: cover;
+    max-width: 220px;
+    max-height: 170px;
+}

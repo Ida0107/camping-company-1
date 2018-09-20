@@ -8,28 +8,6 @@ body {
 
 }
 
-a {
-    color: #243551;
-}
-
-.nav>li>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-header>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-header>a {
-letter-spacing: 2px;
-}
-
-.navbar-fixed-top{
-    margin-bottom: 25px;
-}
-
 .fix {
     max-width: 1200px;
     text-align: center;

@@ -1,10 +1,4 @@
-.navbar-inverse .navbar-brand{
-    color: #cecece;
-}
-
-.navbar-inverse .navbar-nav>li>a{
-    color: #cecece;
-}
+/* 
 
 body {
     font-size: 1.5em;
@@ -18,7 +12,6 @@ body {
     background: white;
     padding: 0 200px;
 }
-
 h1 {
     text-align: center;
 }
@@ -27,4 +20,16 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+} */
+.col{
+    width: 520px;
+    border: grey solid 2px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: justify;
+    letter-spacing: 0.8px;
+}
+h3{
+    text-align: center;
 }

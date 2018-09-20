@@ -1,14 +1,15 @@
 {% include "snippets/base.html" %} {% load staticfiles %} {% block css %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}"> {% endblock %} {% block content_block %}
 
-<div class="orange">
-  <video autoplay muted loop id="myVideo">
-        <source src="{% static 'video/1.mp4' %}" type="video/mp4">
+<section class= "search-container" style= " position: absolute; z-index:-1; top: 0; bottom: 0; width: 100%;height: 100%; overflow: hidden;">
+     
+    <video preload="metadata" autoPlay loop muted oncanplay="this.muted=true" id="video" style="margin: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; min-width: 100%; min-height: 100%; width:auto; height: auto;">
+      <source src="{% static 'video/1.mp4' %}" type="video/MP4">
+    </video>   
+      
+</section>
 
-  </video>
-</div>
-
-<div id="apple">
+<!-- <div id="apple">
   <form class="form-inline" action="{% url 'vehicle:vehicles' %}" method="POST" autocomplete="off">
       {% csrf_token %}
         <div class="form-group">
@@ -41,12 +42,8 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
-</div>
+</div> -->
 
-<div class="fix">
-  <h3>THE CAMPING COMPANY</h3>
-  <h1>BOOK YOUR DREAM HOLIDAY</h1>
-</div>
 
 <script>
     $("#datetimepicker").datetimepicker({

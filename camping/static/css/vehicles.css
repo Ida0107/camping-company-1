@@ -1,25 +1,4 @@
-.nav>li>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-header>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-header>a {
-letter-spacing: 2px;
-}
-
-.navbar-fixed-top{
-    margin-bottom: 25px;
-}
-
-a {
-    color: #243551;
-}
-
+/* 
 body {
   font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
@@ -82,4 +61,4 @@ img {
     object-fit: cover;
     max-width: 220px;
     max-height: 170px;
-}
+} */

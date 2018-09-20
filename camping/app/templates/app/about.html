@@ -1,21 +1,94 @@
 {% include "snippets/base.html" %}
 {% load staticfiles %}
-{% block css %}<link rel="stylesheet" href="{% static 'css/about.css' %}">{% endblock %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/l/about.css' %}">{% endblock %}
 
     {% block content_block %}
-        <div class="fix">
-            <h1>ABOUT US</h1>
-            <hr>
-            <h4>WE RENT SUV'S AND PICKUPS, EQUIPPED WITH ROOF-TOP TENTS AND EVERYTHING YOU NEED FOR AN OVERLAND ADVENTURE.</h4>
-            <p>Located in Guwahati & Shillong we are the gateway to some of the best waterfalls, trekking trails and camping sites this side of the world has to offer. Start here and head wherever your imagination takes you. Our rentals are renowned for being some of the most capable adventure vehicles built. When coupled with roof-top tents, camping equipment, and an adventurous will, these vehicles will take you anywhere you wish to go. We strive to get you there. Let's plan your next adventure!​</p>
-            <h4>WHAT'S INCLUDED IN YOUR RENTAL?</h4>
-            <ul>
-                <li>CAMP CHAIRS</li>
-                <li>BBQ GRILL</li>
-                <li>COOKING AND PLATING WARES</li>
-                <li>3+ PERSON ROOF TOP TENT</li>
-                <li>ADDITIONAL GROUND TENT AVAILABLE FOR 5+ PERSON</li>
-                <li>ADDITIONAL EQUIPMENT AVAILABLE UPON REQUEST</li>
-            </ul>
+    <script type = "text/javascript">
+        var images = [], x = 1;
+        function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 2000);
+          } 
+   
+    images[0] = "{% static 'about/Meghalaya Road Trip Shillong.png' %}";
+    images[1] = "{% static 'about/Meghalaya Road Trip.png' %}";
+    images[2] = "{% static 'about/Meghalaya Tourism Self drive car Guwahati .png' %}";
+    images[3] = "{% static 'about/Meghalaya Tourism the camping company .png' %}";
+    images[4] = "{% static 'about/Meghalaya Tourism Top places to visit.png' %}";
+    images[5] = "{% static 'about/Meghalaya Tourism Umiam Lake.png' %}";
+    images[6] = "{% static 'about/Meghalaya tourism what to see .png' %}";
+    images[7] = "{% static 'about/Places to visit in Meghalaya Umiam Lake.png' %}";
+    images[8] = "{% static 'about/Meghalaya Tourism best way to reach shillong.png' %}";
+   
+    
+    </script>
+    <body  onload = "startTimer()" >
+   
+    <div class="image">
+        <img id="img" src="{% static 'about/Meghalaya Road Trip Shillong.png' %}" style= " position: absolute; z-index:-1; top: 0; bottom: 0; width: 100%;height: 60%; overflow: hidden;">
+    </div>
+    <div style="position: relative">
+    <div style="margin: 310px 80px;;" class="row">
+        <div style="float: left" class="col">
+            <h3>Who are we?</h3>
+            <p>Welcome to The Camping Company. We are the creators and believers of an alternate way of exploring the world. Camping co. is India's first self drive over-lander expedition venture.</p>
+            <p>We rent SUVs and Pickups, equipped with luxury roof-top tents and everything you need for an overland adventure.</p>
+            <p>​We aim to create a community of thinkers, doers and avid nature - adventure lovers. </p>
+            <p>Located in Guwahati, Assam, we are the gateway to some of the best camping sites, trekking trails, waterfalls, national parks, forests and river islands of North East India.</p>
+            <p> Camping Amenities: </p>
+          
+                <ul>
+                    <li> Rooftop tent for 3 Adventurers </li>
+                    <li> Sleeping Bags </li>
+                    <li> BBQ Grill</li>
+                    <li> Ground tents</li>
+                    <li> Camp table and Chairs </li>
+                    <li> Cooking and Plating wares</li>
+                    <li> Charcoal and Kerosene for cooking</li>
+                    <li> Additional Equipment available upon request</li>
+                </ul>
         </div>
+        <div style="float: right"  class="col">
+
+        </div>
+    </div>
+   </div>
+    </body>
+
+
+    <!-- <div class="image">
+        <img src="../../assets/5.jpg" style= " position: absolute; z-index:-1; top: 0; bottom: 0; width: 100%;height: 50%; overflow: hidden;">
+      </div>
+      <div class="about-container container">
+        <h3>Who are we?</h3>
+        <p>Welcome to The Camping Company. We are the creators and believers of an alternate way of exploring the world. Camping co. is India's first self drive over-lander expedition venture.</p>
+        <p>We rent SUVs and Pickups, equipped with luxury roof-top tents and everything you need for an overland adventure.</p>
+        <p>​We aim to create a community of thinkers, doers and avid nature - adventure lovers. </p>
+        <p>Located in Guwahati, Assam, we are the gateway to some of the best camping sites, trekking trails, waterfalls, national parks, forests and river islands of North East India.</p>
+        <p> Camping Amenities: </p>
+      
+            <ul>
+                <li> Rooftop tent for 3 Adventurers </li>
+                <li> Sleeping Bags </li>
+                <li> BBQ Grill</li>
+                <li> Ground tents</li>
+                <li> Camp table and Chairs </li>
+                <li> Cooking and Plating wares</li>
+                <li> Charcoal and Kerosene for cooking</li>
+                <li> Additional Equipment available upon request</li>
+            </ul>
+          <br>
+          <br>
+        
+      </div> -->
+      
     {% endblock %}

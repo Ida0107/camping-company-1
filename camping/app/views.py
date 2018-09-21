@@ -107,6 +107,6 @@ def represent(request):
 
 def destination(request):
     items = Destination.objects.all()
-    return render(request, "app/user_page.html", {"items": items})
+    return render(request, "app/destination.html", {"items": items})
 
 

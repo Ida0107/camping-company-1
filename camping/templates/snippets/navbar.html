@@ -20,7 +20,7 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item"><a class="navbar-link" href="{% url 'app:about' %}">About</a></li>
             <li class="nav-item"><a class="navbar-link" href="{% url 'app:destination' %}">Destinations</a></li>
-            <li class="nav-item"><a class="navbar-link" href="{% url 'app:aboutVehicles' %}">Vehicles</a></li>
+            <li class="nav-item"><a class="navbar-link" href="{% url 'vehicle:vehicle_info' %}">Vehicles</a></li>
             <li class="nav-item"><a class="navbar-link" href="{% url 'app:findus' %}">Contact</a></li>
             {% if user.is_authenticated %}
               <li class="nav-item"><a class="navbar-link" href="{% url 'register:signout' %}">Logout</a></li>

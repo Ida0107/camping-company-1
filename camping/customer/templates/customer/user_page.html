@@ -1,6 +1,6 @@
 {% include "snippets/base.html" %}
 {% load staticfiles %}
-    {% block css %}<link rel="stylesheet" href="{% static 'css/l/destination.css' %}">{% endblock %}
+    {% block css %}<link rel="stylesheet" href="{% static 'css/l/user_page.css' %}">{% endblock %}
 
     {% block content_block %}
       <div class="par">
@@ -21,11 +21,11 @@
         </div>
       </div>
       {% endfor %}
-      </div>
-    <form id="test" action="{% url 'customer:custom_itinerary' %}" method="POST">
+          <form id="test" action="{% url 'customer:custom_itinerary' %}" method="POST">
       {% csrf_token %}
       <input class="btn btn-primary btn-lg btn pull-right" type="submit" value="Submit Choices">
     </form>
     <a class="test btn btn-primary btn-lg btn pull-right" id="tests" href="{% url 'customer:custom_itinerary' %}">Next</a>
 
+      </div>
 {% endblock %}

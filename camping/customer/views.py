@@ -10,7 +10,7 @@ import requests
 
 
 # def destination(request):
-#     return render(request, "customer/destination.html")
+#     return render(request, "customer/user_page.html")
 
 
 @login_required
@@ -18,7 +18,7 @@ def user_page(request):
     Search.objects.new_or_get(request)
     items = Destination.objects.all()
     context = {"items": items}
-    return render(request, "customer/destination.html", context)
+    return render(request, "customer/user_page.html", context)
 
 
 @login_required

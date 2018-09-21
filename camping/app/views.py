@@ -16,6 +16,10 @@ def about(request):
     return render(request, "app/about.html")
 
 
+def terms_condition(request):
+    return render(request, "app/terms_condition.html")
+
+
 def calender(request):
     if request.user.is_superuser:
         x = Trip.objects.filter(trip_status="ongoing")

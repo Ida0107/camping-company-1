@@ -6,23 +6,26 @@ from django.utils.dateparse import parse_date
 
 # Create your views here.
 
-
 def vehicles(request):
-    if request.method == "POST":
-        city = request.POST.get("place")
-        tripDay = parse_date(request.POST.get("tripDay"))
-        totalDays = request.POST.get("Duration")
-        if city == "" or tripDay == "" or totalDays is None:
-            city = None
-            tripDay = None
-            totalDays = None
+    #if request.method == "POST":
+     #   city = request.POST.get("place")
+       # tripDay = parse_date(request.POST.get("tripDay"))
+      #  totalDays = request.POST.get("Duration")
+        #if city == "" or tripDay == "" or totalDays is None:
+         #   city = None
+          #  tripDay = None
+           # totalDays = None
 
-        Search.objects.new_or_get(request, city=city, tripDay=tripDay, totalDays=totalDays)
+        #Search.objects.new_or_get(request, city=city, tripDay=tripDay, totalDays=totalDays)
     return render(request, "vehicle/vehicles.html")
 
 
 def thar(request):
     return render(request, "vehicle/vehicle1.html")
+
+
+def vehicle_info(request):
+    return render(request, "vehicle/vehicle_info.html")
 
 
 def time(request):

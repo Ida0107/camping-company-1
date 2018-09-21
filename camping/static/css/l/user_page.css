@@ -1,46 +1,3 @@
-.image{
-
-  width: 350px;
-  height: 300px;
-  border: solid rgb(182, 177, 177) 2px;
-  border-radius: 20px;
-}
-.co{
-  margin: 10px;
-}
-.ca{
-  float: left;
-  
-}
-.info-bundle{
-  margin-left: 10px;
-  letter-spacing: 1px;
-  text-align: center;
-}
-.title-btn{
-  border-radius: 10px;
-  border: solid rgba(60, 148, 189, 0.938) 1px;
-  width: 100px;
-  text-align: center;
-  height: 30px;
-  line-height: 25px;
-  font-family: sans-serif;
-  margin-left: 130px;
- 
-}
-
-.title-btn:hover{
-  background-color: rgba(60, 148, 189, 0.938);
-}
-
-a:hover{
-  color: white;
-  text-decoration: none;
-}
-
-
-
-/* 
 .par{
   max-width: 840px;
   margin: 0 auto;
@@ -54,7 +11,7 @@ a:hover{
   position: relative;
   display: inline-block;
   margin: 10px;
-
+  float: left;
 }
 
 .ca:nth-child(even){
@@ -105,7 +62,7 @@ a:hover{
   font-weight: 600;
 }
 
-.ca .mo .ca .mo button{
+.ca .mo a, .ca .mo button{
   text-decoration: none;
   color: #f4f4f4;
   font-size: 13px;
@@ -160,4 +117,4 @@ button:focus {outline:0;}
 
 .test {
     visibility: hidden
-} */
+}

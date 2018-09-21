@@ -3,16 +3,16 @@
     {% block css %}<link rel="stylesheet" href="{% static 'css/l/destination.css' %}">{% endblock %}
 
     {% block content_block %}
-      <div class="par">
+      <div class="container">
       {% for item in items %}
       <div class="ca">
         <div class="co">
-          <img src="{{ item.images.url }}">
+          <img class= "image" src="{{ item.images.url }}">
         </div>
         <div class="mo">
           <div class="info-bundle">
             <p class="title">{{item.place}}</p>
-            <a target="_blank" href="{% url 'customer:user_detail_page' pk=item.pk %}">See more</a>
+            <p  class="title-btn"><a target="_blank" href="{% url 'customer:user_detail_page' pk=item.pk %}">See more</a></p>
             <input hidden readonly="readonly" type="number" value="{{item.id}}">
             <br>
             <br>
@@ -20,7 +20,7 @@
         </div>
       </div>
       {% endfor %}
-	<p>You need to Log in in order to add these items in you itinerary</p>
+	<!-- <p>You need to Log in in order to add these items in you itinerary</p> -->
       </div>
 
 {% endblock %}

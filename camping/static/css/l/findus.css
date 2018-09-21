@@ -1,20 +1,4 @@
-a {
-    color: #243551;
-}
 
-.nav>li>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-header>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-fixed-top{
-    margin-bottom: 25px;
-}
 body {
   background-repeat: no-repeat;
   background-size: cover;

@@ -4,30 +4,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-size: cover;
     background-position: center;
-    padding-top: 100px;
-
-}
-
-a {
-    color: #243551;
-}
-
-.nav>li>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-header>a:hover {
-    background-color: transparent;
-    color: #243551;
-}
-
-.navbar-header>a {
-letter-spacing: 2px;
-}
-
-.navbar-fixed-top{
-    margin-bottom: 25px;
 }
 
 .fix {
